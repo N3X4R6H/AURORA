@@ -404,57 +404,7 @@ This is the intended structure, not a requirement to create every file immediate
 
 ---
 
-## 8. Team Organization
-
-The project has seven members.
-
-### M1 — Project lead and architecture integration
-
-- Repository structure and shared contracts.
-- Configuration and architecture decision records.
-- Pull-request reviews and integration.
-- Coordination across workstreams.
-
-### M2 — Transformer architecture
-
-- Embeddings, attention, normalization, feed-forward layers, and Transformer blocks.
-- Model unit tests and tensor-shape documentation.
-
-### M3 — Ternary quantization
-
-- BitNet b1.58 research.
-- Quantization and scaling specification.
-- Ternary linear layers, gradient strategy, and numerical tests.
-
-### M4 — Dataset research and governance
-
-- Corpus comparison and access checks.
-- License and provenance review.
-- Dataset selection, filtering, and deduplication policy.
-
-### M5 — Tokenizer and data pipeline
-
-- Tokenizer implementation.
-- Encoding/decoding.
-- Sequence packing and dataset interfaces.
-- Data pipeline tests.
-
-### M6 — Training infrastructure
-
-- Training loop, optimizer, validation, checkpoints, and logging.
-- Compute feasibility and profiling.
-
-### M7 — Testing and evaluation
-
-- Automated test infrastructure.
-- Evaluation metrics and reproducibility.
-- Generation tests, code evaluation, and experiment reports.
-
-Every module should have one accountable owner. Changes to shared interfaces must be discussed with affected owners before merging.
-
----
-
-## 9. Development Workflow
+## 8. Development Workflow
 
 Use Git and GitHub for collaborative development.
 
@@ -481,7 +431,7 @@ main
 
 ---
 
-## 10. Current Development Phase
+## 9. Current Development Phase
 
 The initial phase is architecture and pipeline development.
 
@@ -511,7 +461,7 @@ Do not begin long GPU training runs before the first end-to-end smoke test and c
 
 ---
 
-## 11. Compute Constraints
+## 10. Compute Constraints
 
 The project is initially compute-constrained.
 
@@ -527,7 +477,7 @@ Paid cloud compute is not assumed in the initial plan. Any future request for in
 
 ---
 
-## 12. Longer-Term Research Direction
+## 11. Longer-Term Research Direction
 
 After the standalone model works, AURORA may explore a coding-agent architecture that combines a compact model with stronger external or locally hosted components.
 
@@ -545,7 +495,7 @@ These are future hypotheses, not current implemented features. The first priorit
 
 ---
 
-## 13. Instructions for AI Coding Assistants
+## 12. Instructions for AI Coding Assistants
 
 Any LLM or coding assistant working on AURORA must follow these rules.
 
@@ -579,7 +529,7 @@ Do not replace requested code with vague pseudocode unless the user specifically
 
 ---
 
-## 14. Definition of Success
+## 13. Definition of Success
 
 AURORA's initial success is a reproducible, technically defensible experiment demonstrating that the team can:
 
