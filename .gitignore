@@ -1,0 +1,9 @@
+# Python cache and build artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Project-specific exclusions
+data/
+experiments/
