@@ -1,9 +1,14 @@
 import pytest
-import torch
+
+try:
+    import torch
+    TORCH_AVAILABLE = True
+except ImportError:
+    TORCH_AVAILABLE = False
 
 
 def pytest_collection_modifyitems(config, items):
-    if torch.cuda.is_available():
+    if not TORCH_AVAILABLE or torch.cuda.is_available():
         return
     skip_gpu = pytest.mark.skip(reason="CUDA not available")
     for item in items:
@@ -13,4 +18,5 @@ def pytest_collection_modifyitems(config, items):
 
 @pytest.fixture(autouse=True)
 def _seed():
-    torch.manual_seed(0)  # fixed seed so failures reproduce
+    if TORCH_AVAILABLE:
+        torch.manual_seed(0)  # fixed seed so failures reproduce
