@@ -1,8 +1,6 @@
 # AURORA — Comprehensive Dataset Research, Comparison, and Selection Report
 
-- **Document status**: Version 1.0
 - **Primary domain**: Code data pipeline, dataset curation and governance
-- **Author**: Sahana (Hardly Humans AI Club, IIT Dharwad)
 - **Target architectures**: **AURORA-Scratch:** decoder-only Transformer pretraining (10M–30M parameters) from random initialisation. **AURORA-Adapt:** SFT and parameter-efficient fine-tuning (PEFT / QLoRA) on small open-weight base models.
 
 **Evidence tags.** `[V]` read on the dataset page, card or paper · `[S]` read via a search-result copy (re-open and confirm before release) · `[A]` planning assumption, to be replaced by a measurement · `[U]` not yet verified (a to-do).
