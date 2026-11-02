@@ -4,6 +4,6 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 
-# Project-specific exclusions
-data/
-experiments/
+# Project-specific exclusions (root only)
+/data/
+/experiments/
