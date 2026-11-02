@@ -1,5 +1,6 @@
 # AURORA — Comprehensive Dataset Research, Comparison, and Selection Report
-|||
+| | |
+|---|---|
 
 | **Primary domain** | Code data pipeline, dataset curation and governance |
 | **Target architectures** | **AURORA-Scratch:** decoder-only Transformer pretraining (10M–30M parameters) from random initialisation. **AURORA-Adapt:** SFT and parameter-efficient fine-tuning (PEFT / QLoRA) on small open-weight base models. |
